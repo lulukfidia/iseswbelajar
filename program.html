@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Belajar — PKBM ISESW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span class="logo-badge">IS</span> PKBM <span class="gradient-text">ISESW</span>
+        </a>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="program.html" class="active">Program Belajar</a>
+            <a href="biaya.html">Biaya & Beasiswa</a>
+            <a href="daftar.html">PPDB Online</a>
+        </nav>
+        <div class="nav-right">
+            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+            <a href="daftar.html" class="btn" style="padding:0.5rem 1rem; font-size:0.85rem;">Daftar Sekarang</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="sec-head">
+            <span>Katalog Pendidikan & Vokasi</span>
+            <h2>8 Pilihan Program Belajar PKBM ISESW</h2>
+            <p>Gunakan filter atau kotak pencarian di bawah untuk menemukan program pendidikan kesetaraan dan kursus keterampilan.</p>
+        </div>
+
+        <div class="filter-bar">
+            <div class="tabs">
+                <button class="tab-btn active" data-filter="all">Semua Program (8)</button>
+                <button class="tab-btn" data-filter="kesetaraan">Kesetaraan Paket A/B/C (3)</button>
+                <button class="tab-btn" data-filter="kursus">Kursus Keterampilan & IT (5)</button>
+            </div>
+            <div style="min-width:250px;">
+                <input type="text" id="searchProgram" placeholder="🔍 Cari nama program...">
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <!-- 1. Paket A -->
+            <div class="card course-card" data-cat="kesetaraan">
+                <div>
+                    <div class="banner-box">
+                        <span>📚</span>
+                        <strong>PAKET A • SETARA SD</strong>
+                    </div>
+                    <span class="chip">KESETARAAN • DASAR</span>
+                    <h3>Program Paket A</h3>
+                    <p>Pendidikan dasar setara SD/MI bagi anak maupun warga masyarakat yang ingin menuntaskan wajib belajar 6 tahun.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="paketa" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 2. Paket B -->
+            <div class="card course-card" data-cat="kesetaraan">
+                <div>
+                    <div class="banner-box">
+                        <span>📖</span>
+                        <strong>PAKET B • SETARA SMP</strong>
+                    </div>
+                    <span class="chip">KESETARAAN • MENENGAH</span>
+                    <h3>Program Paket B</h3>
+                    <p>Pendidikan menengah pertama setara SMP/MTs dengan pembekalan literasi digital dan karakter kemandirian.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="paketb" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 3. Paket C -->
+            <div class="card course-card" data-cat="kesetaraan">
+                <div>
+                    <div class="banner-box">
+                        <span>🎓</span>
+                        <strong>PAKET C • SETARA SMA</strong>
+                    </div>
+                    <span class="chip">KESETARAAN • ATAS</span>
+                    <h3>Program Paket C</h3>
+                    <p>Pendidikan menengah atas setara SMA/MA dengan jadwal fleksibel untuk pekerja, atlet, maupun wirausahawan muda.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="paketc" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 4. Pemrograman Web -->
+            <div class="card course-card" data-cat="kursus">
+                <div>
+                    <div class="banner-box">
+                        <span>💻</span>
+                        <strong>WEB & CODING</strong>
+                    </div>
+                    <span class="chip">KURSUS VOKASI • IT</span>
+                    <h3>Pemrograman Web & Aplikasi</h3>
+                    <p>Pelatihan praktis membangun website modern menggunakan HTML5, CSS3, JavaScript hingga publikasi online.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="itweb" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 5. Administrasi Perkantoran -->
+            <div class="card course-card" data-cat="kursus">
+                <div>
+                    <div class="banner-box">
+                        <span>📊</span>
+                        <strong>OFFICE & ADMIN</strong>
+                    </div>
+                    <span class="chip">KURSUS VOKASI • KANTOR</span>
+                    <h3>Administrasi Perkantoran Modern</h3>
+                    <p>Kuasai Microsoft Word, Excel (rumus & laporan keuangan), PowerPoint, dan korespondensi administrasi digital.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="office" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 6. Desain Grafis -->
+            <div class="card course-card" data-cat="kursus">
+                <div>
+                    <div class="banner-box">
+                        <span>🎨</span>
+                        <strong>DESAIN GRAFIS</strong>
+                    </div>
+                    <span class="chip">KURSUS VOKASI • KREATIF</span>
+                    <h3>Desain Grafis & Konten Kreatif</h3>
+                    <p>Belajar merancang poster, banner promosi, kemasan produk, dan konten media sosial menggunakan Canva & Figma.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="desain" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 7. Digital Marketing -->
+            <div class="card course-card" data-cat="kursus">
+                <div>
+                    <div class="banner-box">
+                        <span>📈</span>
+                        <strong>DIGITAL MARKETING</strong>
+                    </div>
+                    <span class="chip">KURSUS VOKASI • BISNIS</span>
+                    <h3>Digital Marketing & Bisnis UMKM</h3>
+                    <p>Strategi pemasaran online melalui Google Bisnis, Marketplace, WhatsApp Business, dan iklan media sosial.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="marketing" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+
+            <!-- 8. Teknisi Komputer -->
+            <div class="card course-card" data-cat="kursus">
+                <div>
+                    <div class="banner-box">
+                        <span>🛠️</span>
+                        <strong>TEKNISI PC & LAN</strong>
+                    </div>
+                    <span class="chip">KURSUS VOKASI • HARDWARE</span>
+                    <h3>Teknisi Komputer & Jaringan</h3>
+                    <p>Praktik perakitan PC, instalasi sistem operasi, perawatan perangkat keras, serta konfigurasi jaringan Wi-Fi.</p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn btn-outline btn-syllabus" data-course="teknisi" style="flex:1;">Detail & Syarat</button>
+                    <a href="daftar.html" class="btn" style="flex:1;">Daftar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="syllabusModal" class="modal-overlay">
+        <div class="modal-box">
+            <h3 id="modalTitle">Rincian Program</h3>
+            <ul id="modalList"></ul>
+            <div style="display:flex; gap:0.8rem; justify-content:flex-end;">
+                <button id="closeModal" class="btn btn-outline">Tutup</button>
+                <a href="daftar.html" class="btn">Lanjut Daftar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 <strong>PKBM ISESW</strong> — Pusat Kegiatan Belajar Masyarakat & Pelatihan Keterampilan. Seluruh hak cipta dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

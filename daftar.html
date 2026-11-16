@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB Online — PKBM ISESW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <span class="logo-badge">IS</span> PKBM <span class="gradient-text">ISESW</span>
+        </a>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="program.html">Program Belajar</a>
+            <a href="biaya.html">Biaya & Beasiswa</a>
+            <a href="daftar.html" class="active">PPDB Online</a>
+        </nav>
+        <div class="nav-right">
+            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="sec-head">
+            <span>Penerimaan Warga Belajar Baru</span>
+            <h2>Formulir Pendaftaran Online PKBM ISESW</h2>
+            <p>Isi biodata di bawah ini untuk terhubung langsung dengan Panitia PPDB PKBM ISESW melalui WhatsApp.</p>
+        </div>
+
+        <form id="regForm" class="form-card">
+            <div class="field">
+                <label>Nama Lengkap (Sesuai Akta / KTP)</label>
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="field">
+                <label>NIK / Nomor WhatsApp Aktif</label>
+                <input type="text" id="nik" placeholder="Contoh: 081234567890" required>
+            </div>
+
+            <div class="field">
+                <label>Pilih Program Belajar</label>
+                <select id="program">
+                    <option value="Program Kesetaraan Paket A (Setara SD)">Program Kesetaraan Paket A (Setara SD)</option>
+                    <option value="Program Kesetaraan Paket B (Setara SMP)">Program Kesetaraan Paket B (Setara SMP)</option>
+                    <option value="Program Kesetaraan Paket C (Setara SMA)" selected>Program Kesetaraan Paket C (Setara SMA)</option>
+                    <option value="Kursus Pemrograman Web & Aplikasi">Kursus Pemrograman Web & Aplikasi</option>
+                    <option value="Kursus Administrasi Perkantoran Modern">Kursus Administrasi Perkantoran Modern</option>
+                    <option value="Kursus Desain Grafis & Konten Kreatif">Kursus Desain Grafis & Konten Kreatif</option>
+                    <option value="Kursus Digital Marketing & Bisnis UMKM">Kursus Digital Marketing & Bisnis UMKM</option>
+                    <option value="Kursus Teknisi Komputer & Jaringan">Kursus Teknisi Komputer & Jaringan</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Pilihan Jadwal Belajar</label>
+                <select id="jadwal">
+                    <option value="Kelas Akhir Pekan (Sabtu - Minggu)">Kelas Akhir Pekan (Sabtu - Minggu)</option>
+                    <option value="Kelas Daring / Fleksibel (Untuk Pekerja)">Kelas Daring / Fleksibel (Untuk Pekerja)</option>
+                    <option value="Kelas Tatap Muka Reguler">Kelas Tatap Muka Reguler</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Alamat Domisili Lengkap</label>
+                <textarea id="alamat" rows="3" placeholder="Tuliskan desa/kelurahan, kecamatan, dan kabupaten/kota" required></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width:100%;">Kirim Pendaftaran ke Admin PKBM ISESW</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 <strong>PKBM ISESW</strong> — Pusat Kegiatan Belajar Masyarakat & Pelatihan Keterampilan. Seluruh hak cipta dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
